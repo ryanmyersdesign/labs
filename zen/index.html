@@ -188,9 +188,11 @@
 						redrawElements(false,false,false,false);
 					} else {
 						current = current + 1;
-						var url = 'https://91ee07a61ca29df61569-b2dba7dce06e8a9c0977ad3a8844e9c8.ssl.cf2.rackcdn.com/v5/assets/css/embed-' + standards[current] + '.css';
+						var url = 'zen.dev/css/embed-' + standards[current] + '.css';
 					}
 					redrawElements(false,url,url,url);
+					console.log(standards[current]);
+					console.log(url);
 				});
 
 				cm.events.add(document.getElementById('opencustomize'),'click',function(e) {
